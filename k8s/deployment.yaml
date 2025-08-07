@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-microservice
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hello-microservice
+  template:
+    metadata:
+      labels:
+        app: hello-microservice
+    spec:
+      containers:
+        - name: hello-container
+          image: ankurgupta30/hello:latest
+          ports:
+            - containerPort: 8080
