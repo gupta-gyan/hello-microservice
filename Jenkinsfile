@@ -12,11 +12,6 @@ pipeline {
   }
 
   stages {
-    stage('Clone') {
-      steps {
-        git REPO_URL
-      }
-    }
 
     stage('Build JAR') {
       steps {
