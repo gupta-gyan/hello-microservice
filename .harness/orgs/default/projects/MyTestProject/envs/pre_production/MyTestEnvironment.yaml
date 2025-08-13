@@ -1,0 +1,7 @@
+environment:
+  name: MyTestEnvironment
+  identifier: MyTestEnvironment
+  orgIdentifier: default
+  projectIdentifier: MyTestProject
+  description: A test environment
+  type: PreProduction
